@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Импорт/Экспорт Транзакций</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="b-export">
+<div class="container mt-5">
+    <h1 class="text-center">Импорт и Экспорт Транзакций</h1>
+
+    <section>
+        <h2>Экспорт Транзакций</h2>
+        <button id="exportButton" class="btn btn-primary">Экспортировать транзакции</button>
+    </section>
+
+    <section>
+        <h2>Импорт Транзакций</h2>
+        <form id="importForm">
+            <div class="form-group">
+                <input type="file" id="fileInput" accept=".csv" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-success">Импортировать транзакции</button>
+        </form>
+    </section>
+
+    <div id="message" class="alert" style="display:none;"></div> <!-- Для отображения сообщений пользователю -->
+</div>
+
+<script src="/assets/js/checkAuth.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/assets/js/header.js"></script>
+<script src="/assets/js/export_import.js" defer></script>
+</body>
+</html>
